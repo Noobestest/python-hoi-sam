@@ -3,14 +3,14 @@ from database.database import initialization
 import json
 
 app = Flask(__name__)
-db = initialization()
+#db = initialization()
 
 @app.get("/")
 def read_root():
     #db.collection('persons').add({'name':'Me'})
-    details = db.collection('persons').get()
-    for detail in details:
-        print(detail)
+    #details = db.collection('persons').get()
+    #for detail in details:
+    #    print(detail)
     return {"url": "Hii" }
 
 
